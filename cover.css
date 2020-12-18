@@ -1,0 +1,241 @@
+/*
+ * Globals
+ */
+ 
+ /* Fonts */
+@font-face {
+  font-family: 'AcherusGrotesque';
+  src: url(assets/fonts/AcherusGrotesque-Thin.ttf);
+  font-weight: 100;
+
+}
+
+@font-face {
+  font-family: 'AcherusGrotesque';
+  src: url(assets/fonts/AcherusGrotesque-Light.ttf);
+  font-weight: 200;
+}
+
+@font-face {
+  font-family: 'AcherusGrotesque';
+  src: url(assets/fonts/AcherusGrotesque-Medium.ttf);
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: 'AcherusGrotesque';
+  src: url(assets/fonts/AcherusGrotesque-Bold.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'AcherusGrotesque';
+  src: url(assets/fonts/AcherusGrotesque-Black.ttf);
+  font-weight: 500;
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritance from `body` */
+}
+
+
+/*
+ * Base structure
+ */
+
+body {
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  padding: 40px;
+  font-family: 'AcherusGrotesque';
+  font-weight: 300;
+  overflow-y: hidden;
+}
+
+.content {
+  background-color: #002894;
+}
+
+
+/*
+ * Header
+ */
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, .5);
+  background-color: transparent;
+  border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+  border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #fff;
+  border-bottom-color: #fff;
+}
+
+main {
+  padding: 80px;
+}
+
+main h1{
+  font-size: 80px;
+  text-align: left;
+  max-width: 700px;
+
+}
+
+main h3{
+  font-size: 60px;
+  font-weight: 100;
+  text-align: left;
+
+}
+
+main a{
+  font-size: 20px;
+  font-weight: 100;
+  float: left;
+  margin-top: 40px;
+
+
+}
+
+main button {
+  padding: 10px 30px;
+  border-radius: 50px;
+  background: #002894;
+  color: #fff;
+  border: 2px solid #fff;
+  transition: 200ms;
+}
+
+main button:hover {
+  border-radius: 50px;
+  background: #fff;
+  color: #002894;
+  border: 2px solid #002894;
+  transition: 500ms;
+}
+
+img {
+  width: 100%;
+}
+
+.illustration-1 {
+  position: absolute;
+  width: 200px;
+  right: 100px;
+  top: 120px;
+}
+
+
+
+.illustration-2 {
+  position: absolute;
+  width: 200px;
+  margin-left: -30px;
+  margin-top: 20px;
+}
+
+.triangle {
+  width: 100%;
+  height: 80px;
+  background: linear-gradient(to bottom right, #002894 0%, #002894 50%, #fff 50%, #fff 100%);
+}
+
+footer {
+  background-color: #fff;
+  padding-bottom: 40px;
+  margin-top: auto;
+}
+
+footer img {
+  max-width: 400px;
+  float: right;
+  padding-right: 40px;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 1200px) {
+  .illustration-1 {
+    display: none;
+  }
+
+  .illustration-2 {
+    position: absolute;
+    width: 120px;
+    margin-left: 100px;
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  body {
+    padding: 0;
+  }
+  main {
+    padding: 40px 20px;
+  }
+  
+  main h1{
+    font-size: 50px;
+    text-align: left;
+    max-width: 100%;
+  
+  }
+  
+  main h3{
+    font-size: 40px;
+    font-weight: 100;
+    text-align: left;
+  
+  }
+
+  main a{
+    font-size: 22px;
+    font-weight: 100;
+    float: left;
+    margin-top: 20px;
+  
+  
+  }
+
+  main button {
+    padding: 10px 20px;
+    border-radius: 50px;
+    background: #002894;
+    color: #fff;
+    border: 2px solid #fff;
+    transition: 200ms;
+  }
+
+  .illustration-2 {
+    display: absolute;
+    right: 50px;
+    width: 50px;
+    margin-top: 120px;
+  }
+
+  footer {
+    margin-top: 0;
+  }
+
+  footer img {
+    margin-top: 20px;
+    padding: 0 20px;
+  }
+}
